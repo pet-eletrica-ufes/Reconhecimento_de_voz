@@ -1,19 +1,15 @@
 import speaker_verification_toolkit.tools as svt
 import librosa
 import numpy
-input
-data1, sr = librosa.load('voice1.wav', sr=16000, mono=True)
-data2, sr = librosa.load('voice2.wav', sr=16000, mono=True)
-data3, sr = librosa.load('voice-viktor.wav', sr=16000, mono=True)
-data4, sr = librosa.load('voice-antonio.wav', sr=16000, mono=True)
-data5, sr = librosa.load('voice-antonio-2.wav', sr=16000, mono=True)
-data6, sr = librosa.load('voice-antonio-3.wav', sr=16000, mono=True)
-data7, sr = librosa.load('voice-patrick.wav', sr=16000, mono=True)
-data8, sr = librosa.load('voice-patrick-2.wav', sr=16000, mono=True)
 
-
-
-
+data1, sr = librosa.load('eduardo/voice1.wav', sr=16000, mono=True)
+data2, sr = librosa.load('eduardo/voice2.wav', sr=16000, mono=True)
+data3, sr = librosa.load('viktor/voice-viktor.wav', sr=16000, mono=True)
+data4, sr = librosa.load('antonio/voice-antonio.wav', sr=16000, mono=True)
+data5, sr = librosa.load('antonio/voice-antonio-2.wav', sr=16000, mono=True)
+data6, sr = librosa.load('antonio/voice-antonio-3.wav', sr=16000, mono=True)
+data7, sr = librosa.load('patrick/voice-patrick.wav', sr=16000, mono=True)
+data8, sr = librosa.load('patrick/voice-patrick-2.wav', sr=16000, mono=True)
 
 
 data1 = svt.rms_silence_filter(data1)
@@ -40,6 +36,9 @@ voice_data_list_Viktor=["Viktor", data3]
 voice_data_list_Antonio=["Antonio", data4, data5, data6]
 voice_data_list_Patrick=["Patrick", data7, data8]
 voice_data_list=[voice_data_list_Eduardo, voice_data_list_Antonio, voice_data_list_Viktor, voice_data_list_Patrick]
+
+
+
 distancia=0
 menor_dist=float("inf")
 nome_menor_dist=""
