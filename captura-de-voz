@@ -1,0 +1,12 @@
+import sounddevice as sd 
+import wavio as wv 
+import numpy
+from scipy.io.wavfile import write
+
+freq=16000
+tempo=2
+gravar=sd.rec(int(tempo*freq), samplerate=freq, channels=2)
+sd.wait()
+sampwidth=2
+write("teste0.wav", freq, gravar)
+wv.write("teste.wav", gravar, freq, sampwidth=sampwidth)
