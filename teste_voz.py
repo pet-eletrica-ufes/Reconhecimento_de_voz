@@ -50,7 +50,8 @@ for i in range(len(voice_data_list)):
         if j==0:
             print(f"Distancia {voice_data_list[i][j]}:")
         else:
-            distancia+=svt.compute_distance(voice_data_list[i][j], data6)
+            distancia+=svt.compute_distance(voice_data_list[i][j], data8)
+    distancia=distancia/(len(voice_data_list[i])-1)
     print(distancia)
     if distancia<menor_dist:
         menor_dist=distancia
