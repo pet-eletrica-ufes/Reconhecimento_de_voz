@@ -22,6 +22,7 @@ data12, sr = librosa.load('patrick/voice-patrick-12.wav', sr=16000, mono=True)
 data13, sr = librosa.load('patrick/voice-patrick-13.wav', sr=16000, mono=True)
 data14, sr = librosa.load('patrick/voice-patrick-14.wav', sr=16000, mono=True)
 data15, sr = librosa.load('patrick/voice-patrick-15.wav', sr=16000, mono=True)
+
 data16, sr = librosa.load('antonio/voice-antonio-1.wav', sr=16000, mono=True)
 data17, sr = librosa.load('antonio/voice-antonio-2.wav', sr=16000, mono=True)
 data18, sr = librosa.load('antonio/voice-antonio-3.wav', sr=16000, mono=True)
@@ -38,6 +39,42 @@ data28, sr = librosa.load('antonio/voice-antonio-13.wav', sr=16000, mono=True)
 data29, sr = librosa.load('antonio/voice-antonio-14.wav', sr=16000, mono=True)
 data30, sr = librosa.load('antonio/voice-antonio-15.wav', sr=16000, mono=True)
 
+data31, sr = librosa.load('bandeira/voice-bandeira-0.wav', sr=16000, mono=True)
+data32, sr = librosa.load('bandeira/voice-bandeira-1.wav', sr=16000, mono=True)
+data33, sr = librosa.load('bandeira/voice-bandeira-2.wav', sr=16000, mono=True)
+data34, sr = librosa.load('bandeira/voice-bandeira-3.wav', sr=16000, mono=True)
+data35, sr = librosa.load('bandeira/voice-bandeira-4.wav', sr=16000, mono=True)
+data36, sr = librosa.load('bandeira/voice-bandeira-5.wav', sr=16000, mono=True)
+data37, sr = librosa.load('bandeira/voice-bandeira-6.wav', sr=16000, mono=True)
+data38, sr = librosa.load('bandeira/voice-bandeira-7.wav', sr=16000, mono=True)
+data39, sr = librosa.load('bandeira/voice-bandeira-8.wav', sr=16000, mono=True)
+data40, sr = librosa.load('bandeira/voice-bandeira-9.wav', sr=16000, mono=True)
+data41, sr = librosa.load('bandeira/voice-bandeira-10.wav', sr=16000, mono=True)
+data42, sr = librosa.load('bandeira/voice-bandeira-11.wav', sr=16000, mono=True)
+data43, sr = librosa.load('bandeira/voice-bandeira-12.wav', sr=16000, mono=True)
+data44, sr = librosa.load('bandeira/voice-bandeira-13.wav', sr=16000, mono=True)
+data45, sr = librosa.load('bandeira/voice-bandeira-14.wav', sr=16000, mono=True)
+
+data46, sr = librosa.load('luca/voice-luca-0.wav', sr=16000, mono=True)
+data47, sr = librosa.load('luca/voice-luca-1.wav', sr=16000, mono=True)
+data48, sr = librosa.load('luca/voice-luca-2.wav', sr=16000, mono=True)
+data49, sr = librosa.load('luca/voice-luca-3.wav', sr=16000, mono=True)
+data50, sr = librosa.load('luca/voice-luca-4.wav', sr=16000, mono=True)
+data51, sr = librosa.load('luca/voice-luca-5.wav', sr=16000, mono=True)
+data52, sr = librosa.load('luca/voice-luca-6.wav', sr=16000, mono=True)
+data53, sr = librosa.load('luca/voice-luca-7.wav', sr=16000, mono=True)
+data54, sr = librosa.load('luca/voice-luca-8.wav', sr=16000, mono=True)
+data55, sr = librosa.load('luca/voice-luca-9.wav', sr=16000, mono=True)
+data56, sr = librosa.load('luca/voice-luca-10.wav', sr=16000, mono=True)
+data57, sr = librosa.load('luca/voice-luca-11.wav', sr=16000, mono=True)
+data58, sr = librosa.load('luca/voice-luca-12.wav', sr=16000, mono=True)
+data59, sr = librosa.load('luca/voice-luca-13.wav', sr=16000, mono=True)
+data60, sr = librosa.load('luca/voice-luca-14.wav', sr=16000, mono=True)
+
+
+
+
+
 data1 = svt.rms_silence_filter(data1)
 data2 = svt.rms_silence_filter(data2)
 data3 = svt.rms_silence_filter(data3)
@@ -53,6 +90,7 @@ data12 = svt.rms_silence_filter(data12)
 data13 = svt.rms_silence_filter(data13)
 data14 = svt.rms_silence_filter(data14)
 data15 = svt.rms_silence_filter(data15)
+
 data16 = svt.rms_silence_filter(data16)
 data17 = svt.rms_silence_filter(data17)
 data18 = svt.rms_silence_filter(data18)
@@ -69,6 +107,39 @@ data28 = svt.rms_silence_filter(data28)
 data29 = svt.rms_silence_filter(data29)
 data30 = svt.rms_silence_filter(data30)
 
+data31 = svt.rms_silence_filter(data31)
+data32 = svt.rms_silence_filter(data32)
+data33 = svt.rms_silence_filter(data33)
+data34 = svt.rms_silence_filter(data34)
+data35 = svt.rms_silence_filter(data35)
+data36 = svt.rms_silence_filter(data36)
+data37 = svt.rms_silence_filter(data37)
+data38 = svt.rms_silence_filter(data38)
+data39 = svt.rms_silence_filter(data39)
+data40 = svt.rms_silence_filter(data40)
+data41 = svt.rms_silence_filter(data41)
+data42 = svt.rms_silence_filter(data42)
+data43 = svt.rms_silence_filter(data43)
+data44 = svt.rms_silence_filter(data44)
+data45 = svt.rms_silence_filter(data45)
+
+data46 = svt.rms_silence_filter(data46)
+data47 = svt.rms_silence_filter(data47)
+data48 = svt.rms_silence_filter(data48)
+data49 = svt.rms_silence_filter(data49)
+data50 = svt.rms_silence_filter(data50)
+data51 = svt.rms_silence_filter(data51)
+data52 = svt.rms_silence_filter(data52)
+data53 = svt.rms_silence_filter(data53)
+data54 = svt.rms_silence_filter(data54)
+data55 = svt.rms_silence_filter(data55)
+data56 = svt.rms_silence_filter(data56)
+data57 = svt.rms_silence_filter(data57)
+data58 = svt.rms_silence_filter(data58)
+data59 = svt.rms_silence_filter(data59)
+data60 = svt.rms_silence_filter(data60)
+
+
 data1 = svt.extract_mfcc(data1)
 data2 = svt.extract_mfcc(data2)
 data3 = svt.extract_mfcc(data3)
@@ -84,6 +155,8 @@ data12 = svt.extract_mfcc(data12)
 data13 = svt.extract_mfcc(data13)
 data14 = svt.extract_mfcc(data14)
 data15 = svt.extract_mfcc(data15)
+
+
 data16 = svt.extract_mfcc(data16)
 data17 = svt.extract_mfcc(data17)
 data18 = svt.extract_mfcc(data18)
@@ -100,16 +173,48 @@ data28 = svt.extract_mfcc(data28)
 data29 = svt.extract_mfcc(data29)
 data30 = svt.extract_mfcc(data30)
 
+data31 =svt.extract_mfcc(data31)
+data32 =svt.extract_mfcc(data32)
+data33 =svt.extract_mfcc(data33)
+data34 =svt.extract_mfcc(data34)
+data35 =svt.extract_mfcc(data35)
+data36 =svt.extract_mfcc(data36)
+data37 =svt.extract_mfcc(data37)
+data38 =svt.extract_mfcc(data38)
+data39 =svt.extract_mfcc(data39)
+data40 =svt.extract_mfcc(data40)
+data41 =svt.extract_mfcc(data41)
+data42 =svt.extract_mfcc(data42)
+data43 =svt.extract_mfcc(data43)
+data44 =svt.extract_mfcc(data44)
+data45 =svt.extract_mfcc(data45)
+
+data46 = svt.extract_mfcc(data46)
+data47 = svt.extract_mfcc(data47)
+data48 = svt.extract_mfcc(data48)
+data49 = svt.extract_mfcc(data49)
+data50 = svt.extract_mfcc(data50)
+data51 = svt.extract_mfcc(data51)
+data52 = svt.extract_mfcc(data52)
+data53 = svt.extract_mfcc(data53)
+data54 = svt.extract_mfcc(data54)
+data55 = svt.extract_mfcc(data55)
+data56 = svt.extract_mfcc(data56)
+data57 = svt.extract_mfcc(data57)
+data58 = svt.extract_mfcc(data58)
+data59 = svt.extract_mfcc(data59)
+data60 = svt.extract_mfcc(data60)
+
 
 
 
 voice_data_list_Viktor=["Viktor"]
 voice_data_list_Antonio=["Antonio", data16, data17, data18, data19, data20, data21, data22, data23, data24, data25, data26, data27, data28, data29, data30]
 voice_data_list_Patrick=["Patrick", data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15]
-voice_data_list_bandeira=["Bandeira"]
+voice_data_list_bandeira=["Bandeira", data31, data32, data33, data34, data35, data36, data37, data38, data39, data40, data41, data42, data43, data44, data45]
 voice_data_list_Betim=["Betim"]
-voice_data_list_Luca=["Luca"]
-voice_data_list=[voice_data_list_Antonio,  voice_data_list_Patrick]
+voice_data_list_Luca=["Luca",data46, data47, data48, data49, data50, data51, data52, data53, data54, data55, data56, data57, data58, data59, data60]
+voice_data_list=[voice_data_list_Antonio,  voice_data_list_Patrick, voice_data_list_bandeira, voice_data_list_Luca]
 datateste_list=[]
 
 

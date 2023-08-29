@@ -11,12 +11,12 @@ def main():
     distancia=0
     menor_dist=float("inf")
     nome_menor_dist=""
+    pessoa=input("Diga seu nome: ")
     
 
-    for i in range(10):
-        pessoa=input("Diga seu nome: ")
-        captura_voz(pessoa, 1, "testes")
-        datateste, sr = librosa.load(f'voice-{pessoa}-1.wav', sr=16000, mono=True)
+    for i in range(3):
+        captura_voz(pessoa, 1, i)
+        datateste, sr = librosa.load(f'voice-{pessoa}-{i}.wav', sr=16000, mono=True)
         datateste =svt.rms_silence_filter(datateste)
         datateste =svt.extract_mfcc(datateste)
         datateste_list.append(datateste)
