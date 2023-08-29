@@ -7,7 +7,7 @@ from listasdevoz import voice_data_list, datateste_list
 
 Nome=input("Digite seu nome: ")
 gravacoes=int(input("Escolha o número de gravações: "))
-captura_voz(Nome, gravacoes, Nome)
+captura_voz(Nome, gravacoes)
 
 
 
