@@ -39,7 +39,9 @@ def main():
         else:
                 acerto="nao"
         
-        write_report(f"report/relatorio{a+1}.txt", pessoa, acerto, menor_dist)
+        write_report(f"report/relatorio{a+1}.txt", pessoa, acerto, nome_menor_dist, menor_dist)
+
+    datateste_list.clear()
     
 if __name__ == "__main__":
     main()
