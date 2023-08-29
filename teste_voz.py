@@ -56,8 +56,8 @@ def main():
     data15 = svt.extract_mfcc(data15)
 
     
-    voice_data_list_Viktor=["Viktor", data3]
-    voice_data_list_Antonio=["Antonio", data4, data5, data6]
+    voice_data_list_Viktor=["Viktor"]
+    voice_data_list_Antonio=["Antonio"]
     voice_data_list_Patrick=["Patrick", data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15]
     voice_data_list_bandeira=["Bandeira"]
     voice_data_list_Betim=["Betim"]
