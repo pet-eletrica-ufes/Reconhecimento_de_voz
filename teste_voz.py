@@ -15,7 +15,7 @@ def main():
 
     for i in range(10):
         pessoa=input("Diga seu nome: ")
-        captura_voz(pessoa)
+        captura_voz(pessoa, 1, "testes")
         datateste, sr = librosa.load(f'voice-{pessoa}-1.wav', sr=16000, mono=True)
         datateste =svt.rms_silence_filter(datateste)
         datateste =svt.extract_mfcc(datateste)
